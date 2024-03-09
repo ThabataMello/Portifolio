@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reserva de viagem</title>
+</head>
+<body>
+    <header>
+        <h1>Reserva de Viagem Avançada</h1></header>
+    
+    <section>
+        <h2>Reserva</h2>
+        <form method="GET" action="">
+            <fieldset>
+            <legend>Dados do usuário</legend>
+
+            <label>Nome:</label><br>
+            <input type="text" name="nome"><br><br>
+            <label>Email:</label><br>
+            <input type="email" required name="email"><br><br>
+            </fieldset>
+
+            <fieldset>
+            <legend>Serviços desejados</legend>
+            <label>
+                <br><input type="checkbox" name="passagens" value="passagens">Compra de Passagens
+            </label>
+            <label>
+            <br><input type="checkbox" name="hospedagem" value="hospedagem">Reserva de Hospedagem
+             </label>
+            <label>
+                <br><input type="checkbox" name="aluguel" value="aluguel">Aluguel de Veículos
+            </label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Forma de pagamento</legend>
+                <label>
+                    <br>
+                    <input type="radio" name="pagamento" valor="cartaoDeCredito">Cartão de crédito
+                </label>
+                <label>
+                    <br>
+                    <input type="radio" name="pagamento" valor="boleto">Boleto                    
+                </label>
+                <label>
+                    <br>
+                    <input type="radio" name="pagamento" valor="pix">PIX
+                </label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Escolha um prazo para pagamento</legend>
+                <select name="prazoPagamento">
+                    <option value="aVista">Á Vista</option>
+                    <option value="5vezes">5 x sem juros</option>
+                    <option value="10vezes" selected>10 x com juros</option>
+                </select>
+            </fieldset>
+
+            <br><label>Comentário:</label><br>
+            <textarea rows="5" name="comentario"></textarea><br><br>
+
+            <input type="submit" name="salvar">
+
+        </form>
+    </section>
+
+    <footer>
+        <br><p>
+            Desenvolvido por Thabata Mello
+        </p>
+    </footer>
+
+</body>
+</html>
